@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: #111D4A;
+    font-family: "Blinker", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 20rem;
+    /* min-height: 100vh; */
+}
+
+.image {
+    width: 20rem;
+    height: auto;
+}
+
+.title {
+    color: #05CBE9;
+}
+
+.info, .minutes-num, .minutes-info {
+    color: #686868;
+}
+
+.info {
+    font-family: "PT Sans", serif;
+}
+
+.button {
+    background-color: #05CBE9;
+    color: #111D4A;
+}
