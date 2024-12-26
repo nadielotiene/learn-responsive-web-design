@@ -8,14 +8,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20%;
+    min-height: 100vh;
 }
 
 .main {
     background-color: #111D4A;
-    font-family: "Blinker", serif;
+    font-family: "Blinker", Arial, Helvetica, sans-serif;
     max-width: 20rem;
-    /* min-height: 100vh; */
 }
 
 .image {
@@ -36,17 +35,17 @@ body {
 
 .info, .minutes-num, .minutes-info {
     /* color: #686868; */
-    color: #BBB;
+    color: #AAA;
     font-size: 1rem;
 }
 
 .info {
-    font-family: "PT Sans", serif;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
     padding: 1rem 0 4rem 0;
     line-height: 1.7rem;
 }
 
-.read-div {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -64,7 +63,18 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     text-align: center;
-    margin-left: 1rem;
     padding: .6rem;
-    width: 10.5rem;
+    width: 10rem;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image {
+        height: 21rem;
+    }
 }
